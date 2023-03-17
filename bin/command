@@ -1,0 +1,14 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use Komtaki\KahlanToCodeception\Commands\ConvertKahlanToCodeception;
+
+// 修正したいファイル or 修正したファイルのあるディレクトリ
+$targetDir = __DIR__ . '/../tests/Fake/FixMe';
+
+// 変換
+(new ConvertKahlanToCodeception($targetDir))->run();

@@ -1,10 +1,10 @@
 <?php
 
-use Zeiri4\Domains\BackyardMasterData\Service\CreateCsvService;
-use Zeiri4\Domains\BackyardMasterData\Data\Table;
-use Zeiri4\Domains\BackyardMasterData\Data\TableColumn;
-use Zeiri4\Domains\BackyardMasterData\Repository\SourceRepositoryPort;
-use Zeiri4\Domains\BackyardMasterData\Data\UpdatePayloadPort;
+use Domains\MasterData\Service\CreateCsvService;
+use Domains\MasterData\Data\Table;
+use Domains\MasterData\Data\TableColumn;
+use Domains\MasterData\Repository\SourceRepositoryPort;
+use Domains\MasterData\Data\UpdatePayloadPort;
 
 describe(CreateCsvService::class, function () {
     given('service', function () {
